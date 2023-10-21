@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Banner from '@/components/Banner'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,12 +15,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Banner />
+      <Header />
       <main className={`${styles.main} ${inter.className}`}>
-        <div>
-          <p>The Transformation Technique Discovery Call</p>
-        </div>
-        <div>
+        <div id="story" class="bg-dark">
           <p>I have tried as long as I can remember to gain control 
           over anxious intrusive thoughts</p> 
           <p>25 years of fighting with my mind, living on meds & still unable to function</p> 
@@ -27,7 +25,7 @@ export default function Home() {
           <p>Please...even if you don't feel like you have what it takes to try just one more time Your brains’ got this...trust the process</p>
           <p>Sincerely, Chelsea</p>
         </div>
-        <div>
+        <div id='aroma'>
           <h2>Explore Your Potential</h2>
           <p>The part of our brain that handles our fight, flight, or freeze response also manages our sense of smell</p>
           <p>Using science & his experience with Essential Oils, Dr. Perkus designed the incredibly gentle Aroma Freedom Technique combined with the EO Blends that make it so highly effective</p>
@@ -35,7 +33,7 @@ export default function Home() {
           <p>Wouldn’t it make sense that using our dominant sense of smell would create quick & efficient results</p>
           <p>You sit back & enjoy the sweet scents of nature while your brain has a mini vacation</p>
         </div>
-        <div>
+        <div id='dr.b'>
           <h2>What is the Aroma Freedom Technique?</h2>
           <p>Benjamin Perkus is a renowned speaker & psychologist who utilizes essential oils and positive psychology to help people worldwide enact positive changes in their lives</p>
           <p>He holds a bachelor's degree in Philosophy and a doctorate in Clinical Psychology, and has taught internationally on topics such as trauma release, brain wellness, and personal fulfillment</p>
@@ -47,13 +45,14 @@ export default function Home() {
           <h2>For answers to FAQ check this video out</h2>
           [video]
         </div>
-        <div>
+        <div id='privacy'>
           <h2>Privacy...</h2>
           <p>You don't have to share anything with me If you are a person that likes to share, that is ok too...</p>
           <p>The Aroma Freedom Technique (AFT) uses your sense of smell to gently shift awareness away from negative thoughts, feelings & memories</p>
           <p>This results in greater confidence & inner calm</p>
           <p>Each session combines the concepts of aromatherapy with psychology & neuroscience It is simple, gentle & effective in permanently shifting our negative thinking to positive</p>
         </div>
+        <Footer />
       </main>
     </>
   )
