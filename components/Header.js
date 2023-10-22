@@ -1,29 +1,25 @@
-import { Container, Navbar, Nav } from "react-bootstrap"
+import { Box, AppBar, List, ListItem, Typography } from "@mui/material";
 
 export default function Header() {
     return (
-        <div>
-            <Navbar expand="lg" sticky="top" bg="dark" className="justify-content-between">
-                <Container>
-                    <Navbar.Brand href="#home">Empowered Essence</Navbar.Brand>
-                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Nav className="me-auto justify-content-between">
-                        <Nav.Link href="#story">My Story</Nav.Link>
-                        <Nav.Link href="#aroma">Aroma Freedom</Nav.Link>
-                        <Nav.Link href="#dr.b">Dr. Benjamin</Nav.Link>
-                        <Nav.Link href="#privacy">Privacy</Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>
-                <img 
-                    scr="/public/images/ee-logo.webp"
-                    width="250"
-                    height="250"
+        <Box sx={{ flexGrow: 1}}>
+            <AppBar position="static" sx={{ mb:4, py:3, }}>
+                <List sx={{ display: 'flex' }}>
+                    <ListItem component='a' href="#story">Story</ListItem>
+                    <ListItem component='a' href="#aroma">Aroma</ListItem>
+                    <ListItem component='a' href="#dr.b">Dr. Benjamin</ListItem>
+                    <ListItem component='a' href="#privacy">Privacy</ListItem>
+                </List>
+            </AppBar>
+            <img 
+                    scr="../ee-logo.png"
+                    width={250}
+                    height={250}
                     alt="Empowered Essence Logo" 
                 />
-            <div>
-                <p>The Transformation Technique Discovery Call</p>
-            </div>
-        </div>
+                <Typography variant="body1" margin={4}>
+                    The Transformation Technique Discovery Call
+                </Typography>
+        </Box>
     )
 }
