@@ -12,14 +12,14 @@ export default function Header() {
                 </List>
             </AppBar>
             <img 
-                    scr="../ee-logo.png"
-                    width={250}
-                    height={250}
-                    alt="Empowered Essence Logo" 
-                />
-                <Typography variant="body1" margin={4}>
-                    The Transformation Technique Discovery Call
-                </Typography>
+                scr="./ee-logo.webp"
+                width={250}
+                height={250}
+                alt="Empowered Essence Logo" 
+            />
+            <Typography margin={4} textAlign={'center'} variant="h3">
+                The Transformation Technique Discovery Call
+            </Typography>
         </Box>
     )
 }

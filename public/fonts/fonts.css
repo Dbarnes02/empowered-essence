@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Breathing';
+    src: url('./fonts/Breathing.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'glacial-bold';
+    src: url('./fonts/glacial-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'glacial-regular';
+    src: url('./fonts/glacial-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'glacial-italic';
+    src: url('./fonts/glacial-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

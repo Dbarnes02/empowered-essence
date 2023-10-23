@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <Container>
             <Box sx={{ my:4, textAlign: 'center' }}>
-                <Typography variant="body1">
+                <Typography>
                     Copyright &copy; {currentYear} Diana Barnes. All rights reserved.
                 </Typography>
             </Box>

@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { Box, Container } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,47 +20,92 @@ export default function Home() {
       <main className={`${inter.className}`}>
           <Box id="story" sx={{ bgcolor: 'secondary.main', py:8, my:4 }}>
             <Container>
-              <p>I have tried as long as I can remember to gain control 
-              over anxious intrusive thoughts</p> 
-              <p>25 years of fighting with my mind, living on meds & still unable to function</p> 
-              <p>Just as I was ready to give up, I was invited to observe an Aroma Freedom Technique Session Little did I realize using my sense of smell would give me a new lease on life</p>
-              <p>Please...even if you don't feel like you have what it takes to try just one more time Your brains’ got this...trust the process</p>
-              <p>Sincerely, Chelsea</p>
+              <Typography>
+                I have tried as long as I can remember to gain control over anxious intrusive thoughts
+              </Typography>
+              <Typography>
+                25 years of fighting with my mind, living on meds & still unable to function
+              </Typography>
+              <Typography>
+                Just as I was ready to give up, I was invited to observe an Aroma Freedom Technique Session Little did I realize using my sense of smell would give me a new lease on life
+              </Typography>
+              <Typography>
+                Please...even if you don't feel like you have what it takes to try just one more time Your brains’ got this...trust the process
+              </Typography>
+              <Typography fontFamily={'Breathing'}>
+                Sincerely, Chelsea
+              </Typography>
             </Container>
           </Box>
           <Box id='aroma' sx={{ py:8, my:4 }}>
             <Container>
-              <h2>Explore Your Potential</h2>
-              <p>The part of our brain that handles our fight, flight, or freeze response also manages our sense of smell</p>
-              <p>Using science & his experience with Essential Oils, Dr. Perkus designed the incredibly gentle Aroma Freedom Technique combined with the EO Blends that make it so highly effective</p>
-              <p>(Memory Release Blend, Inner Child, Release, Transformation, Believe & Trauma Life EO's)</p>
-              <p>Wouldn’t it make sense that using our dominant sense of smell would create quick & efficient results</p>
-              <p>You sit back & enjoy the sweet scents of nature while your brain has a mini vacation</p>
+              <Typography variant='h2' fontFamily={'Breathing'}>
+                Explore Your Potential
+              </Typography>
+              <Typography>
+                he part of our brain that handles our fight, flight, or freeze response also manages our sense of smell
+              </Typography>
+              <Typography>
+                Using science & his experience with Essential Oils, Dr. Perkus designed the incredibly gentle Aroma Freedom Technique combined with the EO Blends that make it so highly effective
+              </Typography>
+              <Typography>
+                (Memory Release Blend, Inner Child, Release, Transformation, Believe & Trauma Life EO's)
+              </Typography>
+              <Typography>
+                Wouldn’t it make sense that using our dominant sense of smell would create quick & efficient results
+              </Typography>
+              <Typography>
+                You sit back & enjoy the sweet scents of nature while your brain has a mini vacation
+              </Typography>
             </Container>
           </Box>
           <Box id='dr.b' sx={{ bgcolor: 'secondary.main', py:8, my:4 }}>
             <Container>
-              <h2>What is the Aroma Freedom Technique?</h2>
-              <p>Benjamin Perkus is a renowned speaker & psychologist who utilizes essential oils and positive psychology to help people worldwide enact positive changes in their lives</p>
-              <p>He holds a bachelor's degree in Philosophy and a doctorate in Clinical Psychology, and has taught internationally on topics such as trauma release, brain wellness, and personal fulfillment</p>
-              <p>Dr. Perkus consults with individuals and institutions to improve quality of life through the use of essential oils and intentional focus</p>
-              <p>lHe is the creator of the Aroma Freedom Technique certification course and practicum that has certified thousands of practitioners worldwide</p>
-              <p>The technique highlights the powerful relationship between scent and emotion</p>
+              <Typography variant='h2' fontFamily={'Breathing'}>
+                What is the Aroma Freedom Technique?
+              </Typography>
+              <Typography>
+                Benjamin Perkus is a renowned speaker & psychologist who utilizes essential oils and positive psychology to help people worldwide enact positive changes in their lives
+              </Typography>
+              <Typography>
+                He holds a bachelor's degree in Philosophy and a doctorate in Clinical Psychology, and has taught internationally on topics such as trauma release, brain wellness, and personal fulfillment
+              </Typography>
+              <Typography>
+                Dr. Perkus consults with individuals and institutions to improve quality of life through the use of essential oils and intentional focus
+              </Typography>
+              <Typography>
+                He is the creator of the Aroma Freedom Technique certification course and practicum that has certified thousands of practitioners worldwide
+              </Typography>
+              <Typography>
+                The technique highlights the powerful relationship between scent and emotion
+              </Typography>
             </Container>
           </Box>
           <Box sx={{ py:8, my:4 }}>
             <Container>
-              <h2>For answers to FAQ check this video out</h2>
-              [video]
+              <Typography variant='h2' fontFamily={'Breathing'}>
+                For answers to FAQ check this video out
+              </Typography>
+                [video]
             </Container>
           </Box>
           <Box id='privacy' sx={{ bgcolor: 'secondary.main', py:8, my:4 }}>
             <Container>
-              <h2>Privacy...</h2>
-              <p>You don't have to share anything with me If you are a person that likes to share, that is ok too...</p>
-              <p>The Aroma Freedom Technique (AFT) uses your sense of smell to gently shift awareness away from negative thoughts, feelings & memories</p>
-              <p>This results in greater confidence & inner calm</p>
-              <p>Each session combines the concepts of aromatherapy with psychology & neuroscience It is simple, gentle & effective in permanently shifting our negative thinking to positive</p>
+              <Typography variant='h2' fontFamily={'Breathing'}>
+                Privacy...
+              </Typography>
+              <Typography>
+                You don't have to share anything with me If you are a person that likes to share, that is ok too...
+              </Typography>
+              <Typography>
+                The Aroma Freedom Technique (AFT) uses your sense of smell to gently shift awareness away from negative thoughts, feelings & memories
+              </Typography>
+              <Typography>
+                This results in greater confidence & inner calm
+              </Typography>
+              <Typography>
+                Each session combines the concepts of aromatherapy with psychology & neuroscience It is simple, gentle & effective in permanently shifting our negative thinking to positive
+              </Typography>
             </Container>
           </Box>
       </main>
